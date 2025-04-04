@@ -1,6 +1,12 @@
 // JavaScript for Veda Samhita Foundation website
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Check URL parameters for form submission success
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('message') === 'success') {
+        alert('Message sent successfully! We will contact you soon.');
+    }
+    
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -172,11 +178,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Form Validation
+    // Form Validation - Updated to work with FormSubmit
     const contactForm = document.querySelector('.contact-form');
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
+            // Only prevent default if we need to validate
             e.preventDefault();
             
             let isValid = true;
@@ -212,11 +219,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (isValid) {
-                // In a real implementation, you would submit the form data to a server
-                alert('സന്ദേശം വിജയകരമായി അയച്ചു! ഞങ്ങൾ ഉടൻ തന്നെ നിങ്ങളുമായി ബന്ധപ്പെടുന്നതാണ്.');
-                contactForm.reset();
+                // If all validations pass, submit the form to FormSubmit
+                this.submit();
             } else {
-                alert('ദയവായി എല്ലാ ആവശ്യമായ ഫീൽഡുകളും പൂരിപ്പിക്കുക.');
+                // Show error message for invalid fields
+                alert('Please fill in all required fields.');
             }
         });
         
@@ -233,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
         videoThumbnails.forEach(thumbnail => {
             thumbnail.addEventListener('click', function() {
                 // In a real implementation, you would open a video player
-                alert('വീഡിയോ പ്ലേയർ ലോഡ് ചെയ്യുന്നു...');
+                alert('Video player loading...');
             });
         });
     }

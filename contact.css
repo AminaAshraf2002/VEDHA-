@@ -670,3 +670,18 @@ a {
   }
   
   /* Contact
+  /* Add these styles to your contact.css file */
+
+.google-form-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the iframe responsive on mobile devices */
+@media (max-width: 768px) {
+    .google-form-wrapper iframe {
+        height: 800px; /* Increase height on mobile for better scrolling */
+    }
+}
