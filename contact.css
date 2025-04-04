@@ -1,0 +1,672 @@
+/* Contact Page Specific CSS with enhanced responsiveness */
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background-color: #fff;
+  }
+  
+  .contact-info h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .contact-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: var(--accent-color);
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .contact-details {
+    margin-top: 40px;
+  }
+  
+  .contact-detail-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .contact-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+  }
+  
+  .contact-text p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+ /* Social Connect Section Styles */
+.social-connect {
+    margin-top: 40px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .social-connect h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .social-connect h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Social icon specific colors on hover */
+  .social-icon:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icon:nth-child(1):hover {
+    background-color: #3b5998; /* Facebook blue */
+  }
+  
+  .social-icon:nth-child(2):hover {
+    background-color: #e1306c; /* Instagram pink */
+  }
+  
+  .social-icon:nth-child(3):hover {
+    background-color: #ff0000; /* YouTube red */
+  }
+  
+  .social-icon:nth-child(4):hover {
+    background-color: #25d366; /* WhatsApp green */
+  }
+  
+  .social-icon i {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .social-connect {
+      margin-top: 30px;
+    }
+    
+    .social-connect h3 {
+      font-size: 1.1rem;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .social-icon i {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .social-connect {
+      margin-top: 25px;
+      padding: 0 15px;
+    }
+    
+    .social-connect h3 {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+    
+    .social-icons {
+      gap: 12px;
+    }
+    
+    .social-icon {
+      width: 38px;
+      height: 38px;
+    }
+    
+    .social-icon i {
+      font-size: 1rem;
+    }
+  }
+  /* Contact Form */
+  .contact-form-container {
+    background-color: #f8f1e7;
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    height: 100%;
+  }
+  
+  .contact-form-container h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .contact-form .required {
+    color: var(--primary-color);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: var(--transition);
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(168, 50, 74, 0.2);
+    outline: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Map Section */
+  .map-section {
+    padding: 60px 5%;
+    background-color: #f8f1e7;
+  }
+  
+  .map-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .map-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: var(--accent-color);
+  }
+  
+  .map-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 450px;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 60px 5%;
+    background-color: #fff;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 40px auto 0;
+  }
+  
+  .faq-item {
+    background-color: #f8f1e7;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .faq-question h3 {
+    font-size: .9rem;
+    color: var(--text-color);
+    margin-bottom: 0;
+    flex: 1;
+    padding-right: 15px;
+  }
+  
+  .faq-icon {
+    flex-shrink: 0;
+  }
+  
+  .faq-icon i {
+    transition: var(--transition);
+  }
+  
+  .faq-item.active .faq-icon i {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 0 20px 20px;
+    max-height: 500px;
+  }
+  
+  .faq-answer p {
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+  
+  /* Bank Details Section */
+  .bank-details-section {
+    padding: 60px 5%;
+    background-color: #f8f1e7;
+  }
+  
+  .bank-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+  }
+  
+  .bank-details-container h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .bank-details-container > p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .bank-details {
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+  }
+  
+  .bank-detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .bank-detail-item:last-child {
+    border-bottom: none;
+  }
+  
+  .bank-label {
+    font-weight: 600;
+    color: var(--text-color);
+  }
+  
+  .bank-value {
+    color: var(--primary-color);
+    font-weight: 500;
+    text-align: right;
+    word-break: break-word;
+    padding-left: 15px;
+  }
+  
+  .online-payment {
+    text-align: center;
+  }
+  
+  .online-payment p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Large Screens (Desktops) */
+  @media screen and (max-width: 1200px) {
+    .contact-section,
+    .map-section,
+    .faq-section,
+    .bank-details-section {
+      padding: 50px 4%;
+    }
+    
+    .contact-form-container {
+      padding: 35px;
+    }
+    
+    .bank-details-container {
+      padding: 35px;
+    }
+  }
+  
+  /* Medium Screens (Small Desktops and Tablets) */
+  @media screen and (max-width: 992px) {
+    .contact-section {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    
+    .contact-info {
+      text-align: center;
+    }
+    
+    .contact-info h2::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .contact-detail-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .contact-icon {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    
+    .contact-text {
+      text-align: center;
+    }
+    
+    .social-connect {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .map-section,
+    .faq-section,
+    .bank-details-section {
+      padding: 40px 3%;
+    }
+    
+    .map-container {
+      height: 400px;
+    }
+    
+    .contact-info h2,
+    .map-section h2 {
+      font-size: 2rem;
+    }
+    
+    .contact-form-container h2,
+    .bank-details-container h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  /* Small Screens (Tablets and Mobile Landscape) */
+  @media screen and (max-width: 768px) {
+    .contact-section,
+    .map-section,
+    .faq-section,
+    .bank-details-section {
+      padding: 40px 3%;
+    }
+    
+    .contact-form-container {
+      padding: 30px 20px;
+    }
+    
+    .bank-details-container {
+      padding: 30px 20px;
+    }
+    
+    .bank-detail-item {
+      flex-direction: column;
+    }
+    
+    .bank-label {
+      margin-bottom: 5px;
+    }
+    
+    .bank-value {
+      text-align: left;
+      padding-left: 0;
+    }
+    
+    .contact-info h2,
+    .map-section h2 {
+      font-size: 1.8rem;
+    }
+    
+    .contact-form-container h2,
+    .bank-details-container h2 {
+      font-size: 1.6rem;
+    }
+    
+    .contact-info p,
+    .bank-details-container > p,
+    .online-payment p {
+      font-size: 1rem;
+    }
+    
+    .map-container {
+      height: 350px;
+    }
+    
+    .faq-container {
+      margin-top: 30px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Portrait) */
+  @media screen and (max-width: 576px) {
+    .contact-section,
+    .map-section,
+    .faq-section,
+    .bank-details-section {
+      padding: 30px 20px;
+    }
+    
+    .contact-detail-item {
+      margin-bottom: 25px;
+    }
+    
+    .contact-icon {
+      width: 45px;
+      height: 45px;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+    
+    .contact-text h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    
+    .contact-text p {
+      font-size: 0.95rem;
+    }
+    
+    .contact-form label {
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px 12px;
+      font-size: 0.95rem;
+    }
+    
+    .contact-form button {
+      padding: 12px;
+      font-size: 1rem;
+    }
+    
+    .faq-question {
+      padding: 15px;
+    }
+    
+    .faq-question h3 {
+      font-size: 1rem;
+    }
+    
+    .faq-answer {
+      font-size: 0.95rem;
+    }
+    
+    .faq-item.active .faq-answer {
+      padding: 0 15px 15px;
+    }
+    
+    .map-container {
+      height: 300px;
+    }
+    
+    .bank-details {
+      padding: 15px;
+    }
+    
+    .bank-detail-item {
+      padding: 12px 0;
+    }
+    
+    .bank-label,
+    .bank-value {
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Extra Extra Small Screens */
+  @media screen and (max-width: 400px) {
+    .contact-section,
+    .map-section,
+    .faq-section,
+    .bank-details-section {
+      padding: 25px 15px;
+    }
+    
+    .contact-info h2,
+    .map-section h2 {
+      font-size: 1.6rem;
+    }
+    
+    .contact-form-container h2,
+    .bank-details-container h2 {
+      font-size: 1.5rem;
+    }
+    
+    .contact-info p {
+      font-size: 0.95rem;
+    }
+    
+    .map-container {
+      height: 250px;
+    }
+    
+    .contact-form .form-group {
+      margin-bottom: 15px;
+    }
+  }
+  /* Link styling throughout the site */
+a {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color:  white;
+  }
+  
+  .social-icon:hover {
+    background-color: #a8324a ;
+    transform: translateY(-3px);
+  }
+  
+  /* Contact

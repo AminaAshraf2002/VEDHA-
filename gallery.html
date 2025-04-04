@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="icon" href="./images/vedha .jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <header>
+        <div class="logo-container">
+            <img src="./images/vedha .jpg" alt="വേദ സംഹിത ഫൌണ്ടേഷൻ ലോഗോ" class="logo">
+            <div class="logo-text">
+                <h1>VEDA SAMHITA FOUNDATION</h1>
+                <p>Public Charitable Trust</p>
+               
+            </div>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="join-btn">Join Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="banner-content">
+                <h1>GALLERY</h1>
+                <p>ഞങ്ങളുടെ ആദ്ധ്യാത്മിക ക്ലാസുകളുടെയും പരിപാടികളുടെയും ചിത്രങ്ങൾ</p>
+            </div>
+        </section>
+
+        <section class="gallery-filters">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">എല്ലാം</button>
+                <button class="filter-btn" data-filter="classes">ക്ലാസുകൾ</button>
+                <button class="filter-btn" data-filter="events">പരിപാടികൾ</button>
+                <button class="filter-btn" data-filter="trips">തീർത്ഥാടന യാത്രകൾ</button>
+                <button class="filter-btn" data-filter="yoga">യോഗ & മെഡിറ്റേഷൻ</button>
+            </div>
+        </section>
+
+        <section class="gallery-grid">
+            <div class="gallery-item" data-category="classes">
+                <div class="gallery-image">
+                    <img src="./images/class (4).jpeg" alt="ആദ്ധ്യാത്മിക ക്ലാസ്">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ശ്രീമദ് ഭഗവത് ഗീത ക്ലാസ്</h3>
+                            <p>2024 ജനുവരി</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="classes">
+                <div class="gallery-image">
+                    <img src="./images/class (1).jpeg" alt="ആദ്ധ്യാത്മിക ക്ലാസ്">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ശ്രീ മഹാ ഭാരതം ക്ലാസ്</h3>
+                            <p>2024 ഫെബ്രുവരി</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <div class="gallery-image">
+                    <img src="./images/class (3).jpeg" alt="ആദ്ധ്യാത്മിക പരിപാടി">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ശ്രീകൃഷ്ണ ജന്മാഷ്ടമി ആഘോഷം</h3>
+                            <p>2023 ഓഗസ്റ്റ്</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="yoga">
+                <div class="gallery-image">
+                    <img src="./images/class (2).jpeg" alt="യോഗ ക്ലാസ്">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>അന്താരാഷ്ട്ര യോഗ ദിനം</h3>
+                            <p>2023 ജൂൺ</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="trips">
+                <div class="gallery-image">
+                    <img src="./images/img1 (1).jpeg" alt="തീർത്ഥാടന യാത്ര">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ശബരിമല തീർത്ഥാടനം</h3>
+                            <p>2023 ഡിസംബർ</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="classes">
+                <div class="gallery-image">
+                    <img src="./images/img1 (2).jpeg" alt="ആദ്ധ്യാത്മിക ക്ലാസ്">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ശ്രീ അദ്ധ്യാത്മ രാമായണം ക്ലാസ്</h3>
+                            <p>2024 മാർച്ച്</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <div class="gallery-image">
+                    <img src="./images/img1 (3).jpeg" alt="ആദ്ധ്യാത്മിക പരിപാടി">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>വിഷു ആഘോഷം</h3>
+                            <p>2023 ഏപ്രിൽ</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="yoga">
+                <div class="gallery-image">
+                    <img src="./images/img1 (4).jpeg" alt="മെഡിറ്റേഷൻ ക്ലാസ്">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>മെഡിറ്റേഷൻ സെഷൻ</h3>
+                            <p>2024 ജനുവരി</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="trips">
+                <div class="gallery-image">
+                    <img src="./images/img7.jpg" alt="തീർത്ഥാടന യാത്ര">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ഗുരുവായൂർ ക്ഷേത്ര ദർശനം</h3>
+                            <p>2024 ഫെബ്രുവരി</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="classes">
+                <div class="gallery-image">
+                    <img src="./images/freepik__the-style-is-candid-image-photography-with-natural__62066.jpeg" alt="ആദ്ധ്യാത്മിക ക്ലാസ്">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>കുട്ടികൾക്കുള്ള ഗീത ക്ലാസ്</h3>
+                            <p>2023 നവംബർ</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="gallery-item" data-category="events">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/600x400" alt="ആദ്ധ്യാത്മിക പരിപാടി">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>നവരാത്രി ആഘോഷം</h3>
+                            <p>2023 ഒക്ടോബർ</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="trips">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/600x400" alt="തീർത്ഥാടന യാത്ര">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>ഋഷികേശ് തീർത്ഥാടനം</h3>
+                            <p>2023 മേയ്</p>
+                        </div>
+                        <div class="overlay-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <div class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-caption"></div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+
+        <section class="gallery-videos">
+            <div class="section-header">
+                <h2>വീഡിയോകൾ</h2>
+                <p>ഞങ്ങളുടെ ക്ലാസുകളുടെയും പരിപാടികളുടെയും വീഡിയോകൾ</p>
+            </div>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="വീഡിയോ">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>ശ്രീമദ് ഭഗവത് ഗീത - അധ്യായം 1</h3>
+                        <p>ആചാര്യ രാജേഷ് ശർമ്മ</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="വീഡിയോ">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>പ്രഭാതകാല യോഗ സെഷൻ</h3>
+                        <p>ആചാര്യ ലക്ഷ്മി ദേവി</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="വീഡിയോ">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>ശ്രീ അദ്ധ്യാത്മ രാമായണം - പരിചയപ്പെടൽ</h3>
+                        <p>ആചാര്യ നാരായണൻ നമ്പൂതിരി</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="വീഡിയോ">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>കുട്ടികൾക്കുള്ള പുരാണ കഥകൾ</h3>
+                        <p>ആചാര്യ സുരേഷ് മേനോൻ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-section">
+            <div class="join-content">
+                <h2>ഞങ്ങളോടൊപ്പം ചേരുക</h2>
+                <p>വേദ സംഹിത ഫൌണ്ടേഷൻ പബ്ലിക് ചാരിറ്റബിൾ ട്രസ്റ്റിന്റെ ഗ്രൂപ്പ് അംഗമാകുക. ആദ്ധ്യാത്മിക ക്ലാസുകൾ, തീർത്ഥാടന യാത്രകൾ, സാമൂഹിക സഹായങ്ങൾ എന്നിവയുടെ ഭാഗമാകാം.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScMnc-zPxYknho0IybEUICm-iZm6x6GxviQLSvzJVt3AThdgg/viewform" target="_blank" class="btn primary-btn">ഇപ്പോൾ അംഗമാകുക</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="compact-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="./images/vedha .jpg" alt="Veda Samhita Foundation Logo">
+                    <div>
+                        <h3>Veda Samhita Foundation</h3>
+                        <p>Public Charitable Trust</p>
+                    </div>
+                </div>
+                <p class="footer-desc">A spiritual learning platform empowering thousands of individuals across India and beyond with profound spiritual knowledge and enlightenment.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61574369782297" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/vedasamhitafoundation?igsh=Mmw4d2J4NzIxemRy" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/@vedasamhitafoundation?si=3A6nyiRKYrFXvFWM" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://wa.me/919846053100" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScMnc-zPxYknho0IybEUICm-iZm6x6GxviQLSvzJVt3AThdgg/viewform" target="_blank">Registration</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Spiritual Classes</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html#classes">Bhagavad Gita</a></li>
+                    <li><a href="about.html#classes">Mahabharata</a></li>
+                    <li><a href="about.html#classes">Adhyatma Ramayana</a></li>
+                    <li><a href="about.html#classes">Yoga & Meditation</a></li>
+                    <li><a href="about.html#classes">Children's Classes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Tripunithura, Puthiyakavu, Ernakulam, Kerala, India</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 98460 53100<br>+91 95395 40572<br>+91 94465 60888</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:foundationvedasamhita@gmail.com">foundationvedasamhita@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Veda Samhita Foundation Public Charitable Trust. All Rights Reserved. | Powered by <a href="http://inspitetech.com/" target="_blank" class="credit-link">Inspite Technologies</a></p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>

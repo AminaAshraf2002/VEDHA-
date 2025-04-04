@@ -1,0 +1,865 @@
+/* Home Page Specific CSS for Veda Samhita Foundation website */
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh; /* Changed from 80vh to 100vh for full screen coverage */
+    padding: 60px 5%;
+    background-color: #faf3e8;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Full background overlay */
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/img1\ \(2\).jpeg'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15; /* Adjust opacity as needed */
+    z-index: 0;
+  }
+  
+  .hero-content {
+    flex: 1;
+    z-index: 1;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    word-wrap: break-word;
+    animation: fadeInUp 1.2s ease-out;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    font-size: .8rem;
+    flex-wrap: wrap;
+    animation: fadeInUp 1.4s ease-out;
+  }
+  
+  .hero-image {
+    flex: 1;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .hero-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: block;
+    animation: floatAnimation 6s ease-in-out infinite, fadeIn 1.5s ease-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Classes Section */
+  .classes-section {
+    padding: 60px 5%;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .class-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 30px 20px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid var(--border-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+  }
+  
+  .class-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .class-card h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    word-wrap: break-word;
+  }
+  
+  .class-card p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.5;
+    margin-top: auto;
+    word-wrap: break-word;
+  }
+  
+  .view-more {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  /* Benefits Section */
+  .benefits-section {
+    padding: 60px 5%;
+    background-color: #f8f1e7;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .benefits-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5ede0; /* Fallback background color */
+    opacity: 0.09;
+    z-index: 0;
+  }
+  
+  .benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .benefit-item {
+    display: flex;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 25px;
+    transition: var(--transition);
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+    min-width: 50px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 5px;
+  }
+  
+  .benefit-content {
+    flex: 1;
+    word-wrap: break-word;
+  }
+  
+  .benefit-content h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+  
+  .benefit-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    word-wrap: break-word;
+  }
+  
+  /* Membership Section */
+  .membership-section {
+    padding: 60px 5%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .membership-content {
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .membership-content h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 15px;
+    word-wrap: break-word;
+  }
+  
+  .membership-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: var(--accent-color);
+  }
+  
+  .membership-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+  
+  .membership-plans {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .plan {
+    flex: 1;
+    padding: 25px;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    position: relative;
+    min-width: 200px;
+    box-sizing: border-box;
+  }
+  
+  .plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .plan h3 {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    word-wrap: break-word;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .featured {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+    z-index: 2;
+  }
+  
+  .featured-label {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  
+  .membership-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .membership-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: block;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    padding: var(--section-padding, 60px 5%);
+    background-color: #f8f1e7;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .testimonials-slider {
+    position: relative;
+    margin: 40px auto;
+    max-width: 800px;
+    height: auto;
+    min-height: 300px;
+  }
+  
+  .testimonial-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.5s ease;
+    visibility: hidden;
+    box-sizing: border-box;
+  }
+  
+  .testimonial-card.active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  .quote-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+  
+  .author-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .author-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    word-wrap: break-word;
+  }
+  
+  .author-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    opacity: 0.8;
+    word-wrap: break-word;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .prev-btn, .next-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+  }
+  
+  .prev-btn:hover, .next-btn:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  .dot.active {
+    background-color: var(--primary-color);
+  }
+  
+  /* Large Screens (Desktop) */
+  @media screen and (max-width: 1200px) {
+    .classes-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .membership-section {
+      padding: 50px 4%;
+    }
+    
+    .membership-content h2 {
+      font-size: 2rem;
+    }
+    
+    .membership-content p {
+      font-size: 1rem;
+    }
+    
+    .hero-content h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Medium Screens (Tablets) */
+  @media screen and (max-width: 992px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 5%;
+    }
+    
+    .hero-content {
+      padding-right: 0;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    
+    .hero-content p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    .hero-content h2 {
+      margin-top: 0; /* Removing negative margin */
+    }
+    
+    .classes-section,
+    .benefits-section {
+      padding: 50px 4%;
+    }
+    
+    .classes-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+    
+    .benefits-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .class-card {
+      padding: 25px 15px;
+    }
+    
+    .class-icon {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+    }
+    
+    .class-card h3 {
+      font-size: 1.2rem;
+    }
+    
+    .membership-section {
+      flex-direction: column;
+      padding: 50px 4%;
+      gap: 30px;
+      text-align: center;
+    }
+    
+    .membership-content {
+      width: 100%;
+      padding-right: 0;
+    }
+    
+    .membership-content h2::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .membership-content p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+    }
+    
+    .membership-image {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Small Screens (Mobile Landscape) */
+  @media screen and (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2.2rem;
+    }
+    
+    .hero-image {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    
+    .hero-section {
+      min-height: auto;
+      padding-top: 80px;
+      padding-bottom: 60px;
+    }
+    
+    .classes-section,
+    .benefits-section,
+    .membership-section,
+    .testimonials-section {
+      padding: 40px 3%;
+    }
+    
+    .classes-grid {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    
+    .class-card {
+      padding: 20px 15px;
+    }
+    
+    .class-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    
+    .class-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    
+    .class-card p {
+      font-size: 0.9rem;
+    }
+    
+    .benefit-item {
+      padding: 20px;
+    }
+    
+    .benefit-icon {
+      font-size: 1.8rem;
+      margin-right: 15px;
+    }
+    
+    .benefit-content h3 {
+      font-size: 1.1rem;
+    }
+    
+    .benefit-content p {
+      font-size: 0.9rem;
+    }
+    
+    .membership-plans {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .plan {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+    }
+    
+    .featured {
+      transform: scale(1);
+      order: -1; /* Move featured plan to the top on mobile */
+    }
+    
+    .plan h3 {
+      font-size: 1.2rem;
+    }
+    
+    .price {
+      font-size: 1.8rem;
+    }
+    
+    .testimonial-card {
+      padding: 20px;
+    }
+    
+    .testimonials-slider {
+      min-height: 380px;
+    }
+  }
+  
+  /* Extra Small Screens (Mobile Portrait) */
+  @media screen and (max-width: 576px) {
+    .classes-section,
+    .benefits-section,
+    .membership-section,
+    .testimonials-section {
+      padding: 30px 20px;
+    }
+    
+    .hero-section {
+      padding: 30px 20px;
+    }
+    
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+      font-size: 0.95rem;
+      max-width: 100%;
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+    }
+    
+    .classes-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .benefit-item {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px 15px;
+    }
+    
+    .benefit-icon {
+      margin-right: 0;
+      margin-bottom: 15px;
+      justify-content: center;
+      min-width: auto;
+    }
+    
+    .view-more {
+      margin-top: 25px;
+    }
+    
+    .class-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .membership-content h2 {
+      font-size: 1.6rem;
+    }
+    
+    .membership-content p {
+      font-size: 0.95rem;
+      max-width: 100%;
+    }
+    
+    .plan {
+      padding: 20px 15px;
+    }
+    
+    .plan h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    
+    .price {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    
+    .featured-label {
+      font-size: 0.75rem;
+      padding: 4px 12px;
+    }
+    
+    .plan:hover {
+      transform: translateY(-3px);
+    }
+    
+    /* Stack buttons on small screens */
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+  
+  /* Extra Extra Small Screens */
+  @media screen and (max-width: 400px) {
+    .hero-section,
+    .classes-section,
+    .benefits-section,
+    .membership-section,
+    .testimonials-section {
+      padding: 25px 15px;
+    }
+    
+    .hero-content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+    
+    .class-card {
+      padding: 15px 10px;
+    }
+    
+    .benefit-item {
+      padding: 15px;
+    }
+    
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+    
+    .membership-content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .membership-content p {
+      font-size: 0.9rem;
+    }
+    
+    .testimonial-text {
+      font-size: 0.95rem;
+    }
+    
+    .testimonial-card {
+      padding: 15px;
+    }
+  }
+  
+  /* Fix for fixed positioning issues on mobile */
+  @media screen and (max-width: 768px) {
+    .testimonial-card {
+      position: relative;
+      display: none;
+    }
+    
+    .testimonial-card.active {
+      display: block;
+    }
+    
+    .testimonials-slider {
+      min-height: auto;
+    }
+  }
